@@ -148,3 +148,5 @@
       ```
       
       ![(函数图))](https://github.com/djcxym/YMGraphView/blob/master/img/E25274BF-D185-4E96-88EC-CFF362C3090B.png)
+##License
+  MIT
