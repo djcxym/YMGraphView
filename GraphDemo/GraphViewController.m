@@ -67,7 +67,7 @@
 
 - (void)drawPie {
     YMGraphView *view = [[YMGraphView alloc]initWithFrame:_rect data:@[@400,@300,@700,@400,@400,@600] preferedStyle:YMGraphViewStylePie];
-    [view setPieStickOutIndex:3];
+//    [view setPieStickOutIndex:3];
     [self.view addSubview:view];
 }
 
@@ -97,20 +97,21 @@
         data:@[@[[NSValue valueWithCGPoint:CGPointMake(2, 200)],
                  [NSValue valueWithCGPoint:CGPointMake(7, 900)],
                  [NSValue valueWithCGPoint:CGPointMake(3, 700)],
-                 [NSValue valueWithCGPoint:CGPointMake(8, 1700)],
+                 [NSValue valueWithCGPoint:CGPointMake(8, 1200)],
                  [NSValue valueWithCGPoint:CGPointMake(1, 500)]],
-                @[[NSValue valueWithCGPoint:CGPointMake(3, 300)],
+                @[[NSValue valueWithCGPoint:CGPointMake(3, 800)],
                  [NSValue valueWithCGPoint:CGPointMake(6, 1200)],
                  [NSValue valueWithCGPoint:CGPointMake(4, 800)],
                  [NSValue valueWithCGPoint:CGPointMake(9, 1500)],
                  [NSValue valueWithCGPoint:CGPointMake(2, 500)]],
-                @[[NSValue valueWithCGPoint:CGPointMake(2, 400)],
-                 [NSValue valueWithCGPoint:CGPointMake(6, 900)],
-                 [NSValue valueWithCGPoint:CGPointMake(5, 400)],
+                @[[NSValue valueWithCGPoint:CGPointMake(2, 1400)],
+                 [NSValue valueWithCGPoint:CGPointMake(6, 1900)],
+                 [NSValue valueWithCGPoint:CGPointMake(5, 1400)],
                  [NSValue valueWithCGPoint:CGPointMake(10, 1000)],
                  [NSValue valueWithCGPoint:CGPointMake(1, 1200)]]]
         preferedStyle:YMGraphViewStyleMultiLine];
-//    [view setShowPoint:NO];
+    [view setShowPoint:NO];
+    [view setShowGrid:NO];
     [self.view addSubview:view];
 }
 

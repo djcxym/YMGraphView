@@ -599,10 +599,8 @@ CGFloat nicenum(CGFloat x, NSInteger round)
                 firstPointX = x;
                 firstPointY = y;
             }
-            
         }
     }];
-
 }
 
 @end
